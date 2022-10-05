@@ -1,17 +1,18 @@
 from setuptools import setup
+import app
 
 setup(
-    name="fast_api_sample",
-    version="0.0.1",
+    name="app",
+    version=app.__version__,
     author="Natalia Z.",
     author_email="natalia.z@gmail.com",
     description="Simple fast api application",
     install_requires=[
-        'fastapi==0.70.0',
-        'uvicorn==0.15.0',
-        'SQLAlchemy==1.4.26',
-        'pytest==6.2.5',
-        'requests=2.26.0'
+        'fastapi==0.85.0',
+        'uvicorn==0.18.3',
+        'SQLAlchemy==1.4.41',
+        'pytest==7.1.3',
+        'requests==2.28.1'
     ],
-    scripts=[]
+    scripts=['app/main.py']
 )
